@@ -13,12 +13,16 @@
       <h2 class="text-center">About Jason</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec leo eros, posuere quis sem id, dapibus feugiat est. Suspendisse id tempor eros. Fusce at scelerisque mi. Nulla massa metus, accumsan vitae ipsum ut, pellentesque fermentum massa. Etiam lectus nisl, rhoncus iaculis nulla fermentum, blandit gravida erat. Pellentesque laoreet vitae diam in tempor. Sed sed nisi nec turpis interdum commodo ut nec tellus. Maecenas sit amet libero diam. Nam ante felis, volutpat sit amet posuere in, suscipit ac elit. Morbi eu urna ex.
+      <h2 class="text-center mt-2 mt-4">Open Jobs</h2>
       </p>
-      <h2 class="text-center">Previous Positions</h2>
-      <p>TODO - Show the jobs here</p>
+          {% for job in jobs %}
+            {% include 'jobitem.html' %}
+          {% endfor %}
       <div class="text-center">
+        <p></p>
       <button class="btn btn-outline-primary">Contact us</button>
         <p class="mt-4"> Copyright 2023 -Jason</p>
       </div>
+    </div>
     </body>
 </html>
